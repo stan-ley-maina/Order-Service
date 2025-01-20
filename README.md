@@ -2,7 +2,7 @@
 
 
 
-#🔥 Order Service + Inventory Service = A Seamless Order Experience!
+# 🔥 Order Service + Inventory Service = A Seamless Order Experience!
 Imagine this flow:
 
 # Client places an order 🖥️
