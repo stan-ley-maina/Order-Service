@@ -11,19 +11,19 @@ services:
     networks:
       - app-network
 
-  spring-boot-app:
-    image:  service-image4 # Replace with your Spring Boot app Docker image
-    container_name: spring-boot-container
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/order-db
-      SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: password
-    depends_on:
-      - postgres  # Ensure PostgreSQL is started before Spring Boot app
-    networks:
-      - app-network
-    ports:
-      - "8087git:8080"  # Expose Spring Boot app on host port 8080
+  #spring-boot-app:
+    #image:  service-image4 # Replace with your Spring Boot app Docker image
+    #container_name: spring-boot-container
+    #environment:
+      #SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/order-db
+      #SPRING_DATASOURCE_USERNAME: postgres
+      #SPRING_DATASOURCE_PASSWORD: password
+    #depends_on:
+      #- postgres  # Ensure PostgreSQL is started before Spring Boot app
+    #networks:
+      #- app-network
+    #ports:
+   #   - "8087:8080"  # Expose Spring Boot app on host port 8080
 
 
 networks:
